@@ -22,7 +22,7 @@ end-to-end machine learning workflow rather than a clinically validated tool.
 {% assign app_url = site.streamlit_app_url | default: "" %}
 {% if app_url != "" %}
 <p>
-  <a class="btn btn-sm btn-primary" href="{{ app_url }}" target="_blank" rel="noopener noreferrer">Open app full screen</a>
+  <a href="{{ app_url }}" target="_blank" rel="noopener noreferrer">Open app full screen</a>
 </p>
 
 <iframe
@@ -32,7 +32,7 @@ end-to-end machine learning workflow rather than a clinically validated tool.
   loading="lazy"
 ></iframe>
 {% else %}
-<div class="alert alert-info" role="alert">
+<div style="border: 1px solid var(--global-divider-color); border-radius: 6px; padding: 1rem; margin: 1rem 0;">
   The Streamlit app files are included in this repository under <code>streamlit_app/</code>. After the app is deployed on Streamlit Community Cloud,
   add the deployed URL to <code>streamlit_app_url</code> in <code>_config.yml</code> and this page will embed the live interface here.
 </div>
@@ -44,12 +44,12 @@ end-to-end machine learning workflow rather than a clinically validated tool.
 - Main file path: `streamlit_app/app_capstone.py`
 {% endif %}
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/capstone_feature_comparison.png" class="img-fluid rounded z-depth-1" %}
+<div style="display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+    <div>
+        {% include figure.liquid loading="eager" path="assets/img/capstone_feature_comparison.png" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/capstone_confusion_matrix.png" class="img-fluid rounded z-depth-1" %}
+    <div>
+        {% include figure.liquid loading="eager" path="assets/img/capstone_confusion_matrix.png" %}
     </div>
 </div>
 <div class="caption">
