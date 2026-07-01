@@ -2,8 +2,6 @@
 layout: about
 title: Home
 permalink: /
-nav: true
-nav_order: 1
 subtitle: Data Science Graduate Student | Healthcare Analytics | Applied Machine Learning
 
 profile:
