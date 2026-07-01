@@ -356,6 +356,12 @@ div.modal-footer > button:hover {
   border-top: none;
 }
 
+.alert-info {
+  background-color: #fdfdfd;
+  border-color: #dedede;
+  color: #303030;
+}
+
 div.panel,
 .panel {
   font-family: sans-serif;
