@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: Selected data science and machine learning projects.
+description: Links to selected data science, biomedical analytics, and machine learning projects.
 nav: true
 nav_order: 3
-display_categories: [capstone]
+display_categories:
 horizontal: false
 ---
 

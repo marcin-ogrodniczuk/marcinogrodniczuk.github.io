@@ -1,7 +1,9 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
+nav: true
+nav_order: 1
 subtitle: Data Science Graduate Student | Healthcare Analytics | Applied Machine Learning
 
 profile:
@@ -30,3 +32,5 @@ latest_posts:
 Hello! I am a data science graduate student with a background in biomedical research, focused on applying data analytics and machine learning to healthcare problems. I have experience working with complex datasets, performing statistical analysis, and building predictive models to uncover insights that support decision-making. I am particularly interested in using data to understand patient outcomes, optimize resource allocation, and improve healthcare systems.
 
 This portfolio highlights my academic work, technical projects, and capstone project on clinical deterioration prediction using longitudinal EHR-style data. I am especially interested in practical machine learning workflows: data cleaning, exploratory analysis, feature engineering, model evaluation, and building user-facing tools that make model outputs easier to understand.
+
+My long-term goal is to work at the intersection of biomedical research, healthcare operations, and applied machine learning. I enjoy projects where the technical work has a clear practical purpose: organizing messy data, building interpretable models, and communicating results in a way that helps people make better decisions.

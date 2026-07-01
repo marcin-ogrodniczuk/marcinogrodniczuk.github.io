@@ -19,7 +19,7 @@ The workflow included exploratory data analysis, missing-value and outlier revie
 
 **Important limitation.** The dataset appears highly separable and likely synthetic, so results should be interpreted as a complete applied machine learning workflow rather than as a clinically validated tool.
 
-The model interaction page will link to the deployed Streamlit application once the app is hosted.
+The interactive model interface is available from the [Model App]({{ '/model-app/' | relative_url }}) page.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

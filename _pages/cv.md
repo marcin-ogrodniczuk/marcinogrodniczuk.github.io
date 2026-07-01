@@ -1,12 +1,12 @@
 ---
 layout: cv
-permalink: /cv/
-title: CV
+permalink: /resume/
+title: Resume
 nav: true
-nav_order: 5
+nav_order: 2
 cv_pdf: /assets/pdf/Marcin_Ogrodniczuk_Resume.pdf # you can also use external links here
 cv_format: rendercv # options: rendercv, jsonresume
-description: Resume, education, experience, technical skills, and selected data science projects.
+description: Education, work experience, technical skills, selected projects, and downloadable resume.
 toc:
   sidebar: left
 ---
