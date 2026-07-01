@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://marcin-ogrodniczuk.github.io/sitemap.xml
+Sitemap: https://marcin-ogrodniczuk.github.io/marcinogrodniczuk.github.io/sitemap.xml
