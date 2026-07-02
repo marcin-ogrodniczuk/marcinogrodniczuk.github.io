@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-subtitle: Data Science Graduate Student | Healthcare Analytics | Applied Machine Learning
+subtitle: Healthcare Data Scientist | Healthcare Analytics | Applied Machine Learning & AI
 
 profile:
   align: right
@@ -27,8 +27,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! I am a data science graduate student with a background in biomedical research, focused on applying data analytics and machine learning to healthcare problems. I have experience working with complex datasets, performing statistical analysis, and building predictive models to uncover insights that support decision-making. I am particularly interested in using data to understand patient outcomes, optimize resource allocation, and improve healthcare systems.
+Hello! I am a data scientist with a background in biomedical research, focused on applying data analytics, machine learning, and AI in a healthcare setting.
+I have experience working with complex datasets, performing statistical analysis, and building predictive models to uncover insights that support
+decision-making. I am particularly interested in using data to understand patient outcomes, optimize resource allocation, and improve healthcare systems.
 
-This portfolio highlights my academic work, technical projects, and capstone project on clinical deterioration prediction using longitudinal EHR-style data. I am especially interested in practical machine learning workflows: data cleaning, exploratory analysis, feature engineering, model evaluation, and building user-facing tools that make model outputs easier to understand.
+This website displays my academic work, technical interests, and Master's capstone project on clinical deterioration prediction using longitudinal
+EHR-style data. I am especially interested in practical machine learning workflows: data cleaning, exploratory analysis, feature engineering, model
+evaluation, and building user-facing tools that make model outputs easier to understand.
 
-My long-term goal is to work at the intersection of biomedical research, healthcare operations, and applied machine learning. I enjoy projects where the technical work has a clear practical purpose: organizing messy data, building interpretable models, and communicating results in a way that helps people make better decisions.
+My long-term goal is to work as a data scientist in a healthcare setting. I enjoy projects where I can use data to improve operational efficiency and improve patient outcomes.

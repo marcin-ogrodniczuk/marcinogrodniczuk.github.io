@@ -1,23 +1,19 @@
 ---
 layout: page
-title: Model App
+title: Clinical Disease Progression Model User Interface
 permalink: /model-app/
 description: Interactive Streamlit model interface for the clinical deterioration capstone.
 nav: true
 nav_order: 4
 ---
 
-This page is the deployed model location for the capstone project. The interface lets a user enter a simulated patient profile, choose whether the
-recent trajectory is stable, improving, or deteriorating, and receive an estimated probability of progression to a critical condition.
+This application allows users to enter a simulated patient profile, specify whether a patient's recent health trajectory is stable, improving, or deteriorating, and estimate the probability that the patient will progress to a critical condition.
 
-**Problem.** The project asks whether patient trajectories can be used to identify higher-risk patients before deterioration becomes critical.
+**Problem.** This project investigates whether patient health trajectories can be used to identify individuals at elevated risk of progressing to a critical condition before significant clinical deterioration occurs.
 
-**Approach.** Daily EHR-style observations were converted into patient-level features that summarize current values and short-term change over time.
-Logistic Regression, Random Forest, and Gradient Boosting models were compared using held-out testing, cross-validation, and early-window experiments.
+**Approach.** Simulated daily EHR-style data were transformed into patient-level features that summarize both current clinical status and short-term trends over time. Logistic Regression, Random Forest, and Gradient Boosting models were trained and evaluated using cross-validation, held-out test data, and early-prediction experiments across multiple observation windows.
 
-**Result.** The 30-day, 7-day, 3-day, and 2-day trajectory models produced perfect internal performance, while the 1-day model performed much worse.
-This suggests that the synthetic dataset contains strong trajectory-based signals, but the results should be interpreted as a demonstration of an
-end-to-end machine learning workflow rather than a clinically validated tool.
+**Result.** Models were trained using 30-day, 7-day, and 1-day observation windows. The 30-day and 7-day windows achieved perfect model performance, whereas the 1-day model performed significantly worse. These findings suggest that the dataset is likely synthetic and contains strong trajectory-based predictive signals. However, because the data are simulated, the results should be treated as a valuable demonstration of an end-to-end machine learning pipeline rather than evidence of clinical validity.
 
 {% assign app_url = site.streamlit_app_url | default: "" %}
 {% if app_url != "" %}
