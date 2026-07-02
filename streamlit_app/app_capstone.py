@@ -14,6 +14,7 @@ DATA_PATH = BASE_DIR / 'data' / 'ehr_disease_progression.csv'
 MODEL_PATH = BASE_DIR / 'models' / 'critical_progression_model.joblib'
 FEATURE_PATH = BASE_DIR / 'models' / 'feature_columns.json'
 METRICS_PATH = BASE_DIR / 'reports' / 'metrics.json'
+EDA_FIGURES_DIR = BASE_DIR / 'reports' / 'eda'
 
 
 st.set_page_config(
@@ -75,6 +76,15 @@ def home_page() -> None:
         "resource allocation."
 )
 
+def show_eda_figure(filename: str, caption: str) -> None:
+    figure_path = EDA_FIGURES_DIR / filename
+
+    if figure_path.exists():
+        st.image(str(figure_path), caption=caption, use_container_width=True)
+    else:
+        st.warning(f'Missing EDA figure {figure_path}')
+
+
 def dashboard_page() -> None:
     page_header(
         'Exploratory Dashboard',
@@ -112,6 +122,35 @@ def dashboard_page() -> None:
             .rename(columns={0: 'Not critical', 1: 'Progressed'})
         )
         st.line_chart(chart_df)
+
+    st.divider()
+    st.subheader('EDA Visualizations')
+
+    trend_tab, corr_tab, comparison_tab = st.tabs(
+        [
+            'Daily Trends',
+            'Correlation Matrix',
+            'Group Comparison',
+        ]
+    )
+
+    with trend_tab:
+        show_eda_figure(
+            'daily_vital_trends_by_outcome.png',
+            'Daily vital-sign and patient-behavior trends grouped by progression outcome.',
+        )
+
+    with corr_tab:
+        show_eda_figure(
+            'correlation_matrix.png',
+            'Correlation matrix showing relationships among engineered patient-level features.'
+        )
+
+    with comparison_tab:
+        show_eda_figure(
+            'patient_group_feature_comparison.png',
+            'Comparison of patient-level features between progressed and non-progressed groups.'
+        )
 
     st.subheader('Patient-Level Feature Summary')
     st.dataframe(
@@ -198,46 +237,12 @@ def model_results_page() -> None:
         )
         st.dataframe(matrix, use_container_width=True)
 
-def resume_page() -> None:
-    page_header('Resume', 'Academic and technical background supporting the capstone project.')
-    st.subheader('Education')
-    st.write('Applied Data Science coursework with emphasis on Python, machine learning, statistical analysis, and model evaluation.')
-    st.subheader('Relevant Experience')
-    st.write('Biomedical research and data-driven project work involving clinical data, RNA-seq analysis, predictive modeling, and reproducible workflows.')
-    st.subheader('Technical Skills')
-    st.write('Python, pandas, NumPy, scikit-learn, TensorFlow/Keras, SQL, data visualization, Streamlit, Git, and model interpretation')
-
-def portfolio_page() -> None:
-    page_header('Projects', 'Selected data science and biomedical analytics work.')
-    projects = pd.DataFrame(
-        [
-            {
-                "Project": 'Clinical Deterioration Risk Dashboard',
-                'Focus': 'Sequential EHR classification and Streamlit deployment',
-            },
-            {
-                "Project": "Protein Localization Prediction",
-                'Focus': "Machine learning for biological sequence/function prediction",
-            },
-            {
-                "Project": 'Malaria Cell Classification',
-                "Focus": 'CNN-based medical image classification',
-            },
-            {
-                "Project": "Alphagenome RNA-seq Pipeline",
-                "Focus": 'Bioinformatics workflow development and data processing',
-            }
-        ]
-    )
-    st.dataframe(projects, use_container_width=True, hide_index=True)
 
 PAGES = {
     "Home": home_page,
     'Exploratory Dashboard': dashboard_page,
     'Patient Risk Predictor': predictor_page,
     'Model Results': model_results_page,
-    'Resume': resume_page,
-    'Projects': portfolio_page,
 }
 
 selection = st.sidebar.radio('Navigation', list(PAGES.keys()))
