@@ -1,0 +1,16 @@
+feature,importance
+symptom_severity_std,0.33682600545502905
+symptom_severity_delta,0.3368260054550279
+med_adherence_delta,0.3368260054550268
+med_adherence_std,0.3368260054550268
+med_adherence_slope,0.3368260054550267
+symptom_severity_slope,0.3368260054550259
+heart_rate_slope,0.32627625877736355
+heart_rate_std,0.32267227723093933
+oxygen_saturation_slope,0.31536051838488505
+bp_systolic_slope,0.31097695932714026
+oxygen_saturation_std,0.3108075016986343
+temperature_slope,0.30959003907841276
+respiratory_rate_slope,0.3023958615644719
+heart_rate_delta,0.2999343034716072
+bp_systolic_std,0.2992705301435816
