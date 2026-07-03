@@ -16,6 +16,7 @@ FEATURE_PATH = BASE_DIR / 'models' / 'feature_columns.json'
 METRICS_PATH = BASE_DIR / 'reports' / 'metrics.json'
 EDA_FIGURES_DIR = BASE_DIR / 'reports' / 'eda'
 FIGURES_DIR = BASE_DIR / 'reports' / 'figures'
+CV_SUMMARY_PATH = BASE_DIR / 'reports' / 'cross_validation_summary.csv'
 MODEL_COMPARISON_PATH = BASE_DIR / 'reports' / 'model_comparison.csv'
 TOP_FEATURES_PATH = BASE_DIR / 'reports' / 'top_features.csv'
 EARLY_1_DAY_PATH = BASE_DIR / 'reports' / 'early_window_1_day_holdout_results.csv'
@@ -256,6 +257,23 @@ def model_results_page() -> None:
         comparison = comparison.rename(columns={'index': 'model'})
 
     st.dataframe(comparison.round(4), use_container_width=True)
+
+    st.subheader('Cross-Validation Stability')
+    if CV_SUMMARY_PATH.exists():
+        cv_summary = pd.read_csv(CV_SUMMARY_PATH)
+        st.dataframe(cv_summary.round(4), use_container_width=True)
+
+        show_report_figure(
+            'cross_validation_stability.png',
+            'Mean 5-fold cross-validation scores by model. Error bars show variation across folds.',
+        )
+
+        st.caption(
+            'Cross-validation checks whether model performance remains stable across multiple train-test splits, '
+            'rather than relying only on one held-out test set.'
+        )
+    else:
+        st.info('Cross-validation summary is not available yet.')
 
     st.subheader('ROC Curve and Confusion Matrix')
     fig_col1, fig_col2 = st.columns(2)
