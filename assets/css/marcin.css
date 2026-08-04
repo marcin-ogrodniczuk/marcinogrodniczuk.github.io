@@ -1,0 +1,232 @@
+:root {
+  --portfolio-ink: #172026;
+  --portfolio-muted: #52616b;
+  --portfolio-line: #dbe7e2;
+  --portfolio-panel: #ffffff;
+  --portfolio-soft: #f6faf8;
+  --portfolio-teal: #0f766e;
+  --portfolio-rust: #b45309;
+  --portfolio-blue: #2563eb;
+}
+
+.marcin-home,
+.projects-intro {
+  color: var(--portfolio-ink);
+}
+
+.marcin-home .home-hero {
+  border-bottom: 1px solid var(--portfolio-line);
+  margin: 1.25rem 0 2rem;
+  padding: 0.75rem 0 2rem;
+}
+
+.marcin-home .eyebrow {
+  color: var(--portfolio-teal);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 0.7rem;
+  text-transform: uppercase;
+}
+
+.marcin-home .home-hero h1 {
+  font-size: clamp(2rem, 7vw, 3.35rem);
+  font-weight: 760;
+  letter-spacing: 0;
+  line-height: 1.05;
+  margin: 0 0 1rem;
+  max-width: 780px;
+}
+
+.marcin-home .hero-copy {
+  color: var(--portfolio-muted);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  max-width: 760px;
+}
+
+.marcin-home .hero-actions,
+.projects-intro .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.marcin-home .site-button,
+.projects-intro .site-button {
+  align-items: center;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 8px;
+  color: var(--portfolio-ink);
+  display: inline-flex;
+  font-weight: 650;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0.68rem 0.95rem;
+  text-decoration: none;
+  transition: border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.marcin-home .site-button.primary,
+.projects-intro .site-button.primary {
+  background: var(--portfolio-teal);
+  border-color: var(--portfolio-teal);
+  color: #ffffff;
+}
+
+.marcin-home .site-button:hover,
+.projects-intro .site-button:hover {
+  border-color: var(--portfolio-teal);
+  color: var(--portfolio-teal);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.marcin-home .site-button.primary:hover,
+.projects-intro .site-button.primary:hover {
+  color: #ffffff;
+}
+
+.marcin-home .focus-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: 2rem 0;
+}
+
+.marcin-home .focus-tile,
+.marcin-home .project-row,
+.projects-intro {
+  background: var(--portfolio-panel);
+  border: 1px solid var(--portfolio-line);
+  border-radius: 8px;
+}
+
+.marcin-home .focus-tile {
+  padding: 1rem;
+}
+
+.marcin-home .focus-tile span {
+  color: var(--portfolio-rust);
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 750;
+  margin-bottom: 0.45rem;
+}
+
+.marcin-home .focus-tile h3,
+.marcin-home .project-row h3 {
+  font-size: 1.02rem;
+  line-height: 1.25;
+  margin: 0 0 0.45rem;
+}
+
+.marcin-home .focus-tile p,
+.marcin-home .project-row p,
+.projects-intro p {
+  color: var(--portfolio-muted);
+  line-height: 1.62;
+  margin-bottom: 0;
+}
+
+.marcin-home .section-heading {
+  align-items: end;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 2.2rem 0 0.85rem;
+}
+
+.marcin-home .section-heading h2 {
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.marcin-home .section-heading a {
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.marcin-home .project-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.marcin-home .project-row {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.marcin-home .project-row:hover {
+  border-color: var(--portfolio-blue);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.marcin-home .project-meta {
+  color: var(--portfolio-rust);
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 750;
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+}
+
+.marcin-home .skill-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.15rem 0 0;
+}
+
+.marcin-home .skill-strip span {
+  background: var(--portfolio-soft);
+  border: 1px solid var(--portfolio-line);
+  border-radius: 999px;
+  color: var(--portfolio-ink);
+  font-size: 0.86rem;
+  font-weight: 620;
+  padding: 0.42rem 0.7rem;
+}
+
+.projects-intro {
+  margin: 0.5rem 0 1.5rem;
+  padding: 1.1rem 1.2rem;
+}
+
+.projects-intro h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.55rem;
+}
+
+html[data-theme="dark"],
+body[data-theme="dark"] {
+  --portfolio-ink: #eef5f2;
+  --portfolio-muted: #b9c8c2;
+  --portfolio-line: #32413d;
+  --portfolio-panel: #111a18;
+  --portfolio-soft: #172320;
+  --portfolio-teal: #5eead4;
+  --portfolio-rust: #fbbf24;
+  --portfolio-blue: #93c5fd;
+}
+
+@media (max-width: 780px) {
+  .marcin-home .focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .marcin-home .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .marcin-home .site-button,
+  .projects-intro .site-button {
+    width: 100%;
+  }
+}

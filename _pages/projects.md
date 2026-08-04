@@ -2,12 +2,25 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Links to selected data science, biomedical analytics, and machine learning projects.
+description: Selected healthcare data science, machine learning, and applied AI projects.
 nav: true
 nav_order: 3
 display_categories:
 horizontal: false
 ---
+
+<link rel="stylesheet" href="{{ '/assets/css/marcin.css' | relative_url }}">
+
+<section class="projects-intro">
+  <h2>Project Portfolio</h2>
+  <p>
+    A focused set of healthcare analytics, applied machine learning, and LLM engineering projects. I try to show the full workflow behind each project: problem framing, data pipeline, modeling or agent design, validation, limitations, and the practical value for a real user.
+  </p>
+  <div class="hero-actions">
+    <a class="site-button primary" href="{{ '/projects/healthcare_operations_copilot/' | relative_url }}">Featured AI Agent</a>
+    <a class="site-button" href="{{ '/cv/' | relative_url }}">Resume</a>
+  </div>
+</section>
 
 <!-- pages/projects.md -->
 <div class="projects">

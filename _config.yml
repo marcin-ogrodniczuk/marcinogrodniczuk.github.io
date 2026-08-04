@@ -9,11 +9,11 @@ last_name: Ogrodniczuk
 contact_note: >
   Open to data science, healthcare analytics, and applied machine learning opportunities.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal portfolio for Marcin Ogrodniczuk, focused on data science, healthcare analytics, and applied machine learning projects.
+  Personal portfolio for Marcin Ogrodniczuk, focused on healthcare data science, applied machine learning, and production-minded AI engineering.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: data science, machine learning, healthcare analytics, portfolio # add your own keywords or leave empty
+keywords: data science, machine learning, healthcare analytics, applied AI, LLM engineering, LangGraph, LangChain, portfolio # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 streamlit_app_url: https://marcinogrodniczukappio-ycgikcyh5i4am3yigwuj8m.streamlit.app
