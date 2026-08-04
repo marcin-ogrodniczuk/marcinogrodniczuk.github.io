@@ -38,13 +38,4 @@ The goal of this project is to demonstrate practical LLM production engineering:
 
 **Tech stack.** The no-cost MVP uses FastAPI, Pydantic, LangGraph, LangChain text splitters, local policy and SOP documents, local Python tools, deterministic decision logic, synthetic healthcare cases, pytest golden cases, and Docker Compose. The production roadmap adds OpenAI/LiteLLM structured output, Postgres + pgvector semantic memory, Redis-backed queues, a React review dashboard, LangSmith/Langfuse or OpenTelemetry traces, and GitHub Actions evaluation gates.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="lazy" path="assets/img/healthcare_ops_copilot_mvp_overview.png" title="Healthcare operations copilot MVP overview" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    The MVP focuses on a complete, safe vertical slice: synthetic case input, structured extraction, retrieval, tool calls, action recommendation, citations, confidence, and review flags.
-</div>
-
 This project intentionally avoids real PHI. It uses synthetic patient/referral examples and public healthcare reference material so the demo can show production AI patterns without exposing sensitive clinical data.
