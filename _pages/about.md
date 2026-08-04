@@ -32,7 +32,6 @@ latest_posts:
 <div class="marcin-home">
   <section class="home-hero">
     <p class="eyebrow">Healthcare Data Science + Applied AI</p>
-    <h1>Building trustworthy data products for healthcare operations and patient-centered decisions.</h1>
     <p class="hero-copy">
       I am a data scientist with a biomedical research background, focused on healthcare analytics, machine learning, and production-minded AI systems. I like projects where messy clinical or operational data becomes something useful: a model, dashboard, agent workflow, or decision-support tool that people can inspect and trust.
     </p>
