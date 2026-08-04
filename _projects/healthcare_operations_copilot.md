@@ -9,6 +9,8 @@ category: portfolio
 
 Built a production-style healthcare operations copilot that analyzes synthetic referral and intake cases, retrieves payer policy and clinic SOP evidence, calls operational tools, and returns a structured next-action recommendation with confidence, source citations, and human-review flags.
 
+GitHub: [marcin-ogrodniczuk/healthcare-ai-agent](https://github.com/marcin-ogrodniczuk/healthcare-ai-agent)
+
 The goal of this project is to demonstrate practical LLM production engineering: not just prompting a model, but building the surrounding harness, agent loop, memory layer, guardrails, evaluation checks, and observability path that make an AI system more reliable.
 
 **Core workflow.** A user submits synthetic referral notes, insurance details, intake forms, and appointment rules. The system extracts structured fields such as patient need, payer, diagnosis context, urgency, and missing documents. Retrieval then searches policy and SOP knowledge with citations before the agent recommends one of four operational actions: schedule, request missing information, escalate to human review, or draft a payer call script.
