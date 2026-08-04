@@ -17,7 +17,8 @@ The goal of this project is to demonstrate practical LLM production engineering:
 
 **Production concepts demonstrated.**
 
-- RAG pipeline with chunking, metadata-aware retrieval, citations, and a planned pgvector store
+- RAG pipeline with LangChain document chunking, metadata-aware retrieval, citations, and a planned pgvector store
+- LangGraph StateGraph orchestration for the agent run loop
 - Structured extraction with Pydantic schemas and JSON validation
 - Tool calling for eligibility checks, appointment search, missing-document detection, and payer scripts
 - Guardrails for no diagnosis, no unsupported medical advice, PHI-safe logging, and human review routing
@@ -34,7 +35,7 @@ The goal of this project is to demonstrate practical LLM production engineering:
     The architecture separates the agent harness, execution loop, memory stores, and LLMOps evaluation path.
 </div>
 
-**Tech stack.** The MVP uses FastAPI, Pydantic, Python agent orchestration, local policy and SOP documents, synthetic healthcare cases, pytest golden cases, Docker Compose, and a planned Postgres + pgvector memory layer. The portfolio roadmap adds Redis-backed queues, a React review dashboard, Langfuse or OpenTelemetry traces, and GitHub Actions evaluation gates.
+**Tech stack.** The MVP uses FastAPI, Pydantic, LangGraph, LangChain text splitters, local policy and SOP documents, synthetic healthcare cases, pytest golden cases, Docker Compose, and a planned Postgres + pgvector memory layer. The portfolio roadmap adds Redis-backed queues, a React review dashboard, Langfuse or OpenTelemetry traces, and GitHub Actions evaluation gates.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
