@@ -69,13 +69,13 @@ cv:
           - Compared Logistic Regression, Random Forest, and Gradient Boosting models.
           - Built a Streamlit model interface for interactive risk prediction.
 
-      - name: RAG Pipeline for Biomedical Literature
-        start_date: 2026-05
-        end_date: 2026-05
-        summary: Built a retrieval-augmented generation pipeline that ingests PubMed abstracts and answers natural-language questions with inline citations.
+      - name: Healthcare Operations Copilot Agent
+        start_date: 2026-08
+        end_date: 2026-08
+        summary: Built a production-style healthcare AI agent MVP that analyzes synthetic referral packets and returns structured next-action recommendations with citations, confidence, and human-review flags.
         highlights:
-          - Implemented NCBI Entrez ingestion, semantic chunking, embeddings, ChromaDB vector search, and local LLM generation with Ollama.
-          - Indexed 154 chunks from more than 100 PubMed abstracts.
+          - Implemented a FastAPI and Pydantic backend with a LangGraph AgentState loop for structured extraction, LangChain RAG retrieval, local operational tool calls, deterministic LLM-ready reasoning, guardrails, and AgentDecision JSON output.
+          - Added LLMOps-style evaluation with pytest golden cases, schema validation, citation checks, trace events, and a production roadmap for OpenAI/LiteLLM, pgvector semantic memory, Postgres episodic memory, and LangSmith/Langfuse observability.
 
       - name: Healthcare No-Show Prediction & Patient Utilization Analytics
         start_date: 2026-04
