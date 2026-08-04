@@ -1,0 +1,4 @@
+,accuracy,precision,recall,f1,roc_auc,confusion_matrix
+Logistic Regression,1.0,1.0,1.0,1.0,1.0,"[[284, 0], [0, 116]]"
+Random Forest,1.0,1.0,1.0,1.0,1.0,"[[284, 0], [0, 116]]"
+Gradient Boosting,1.0,1.0,1.0,1.0,1.0,"[[284, 0], [0, 116]]"
