@@ -37,7 +37,6 @@ latest_posts:
     </p>
     <div class="hero-actions">
       <a class="site-button primary" href="{{ '/projects/' | relative_url }}">View Projects</a>
-      <a class="site-button" href="{{ '/cv/' | relative_url }}">Resume</a>
       <a class="site-button" href="https://github.com/marcin-ogrodniczuk">GitHub</a>
     </div>
   </section>
